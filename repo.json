@@ -3,7 +3,7 @@
         "Author": "Zetty",
         "Name": "Wondrous Tails Copier",
         "InternalName": "WondrousTailsCopier",
-        "AssemblyVersion": "0.0.0.8",
+        "AssemblyVersion": "0.0.0.9",
         "Description": "Copy your Wondrous Tails objectives to the clipboard!",
         "ApplicableVersion": "any",
         "Tags": [
@@ -23,6 +23,6 @@
         "DownloadLinkTesting": "https://github.com/zettiverse/WondrousTailsCopier/releases/latest/download/latest.zip",
         "DownloadLinkUpdate": "https://github.com/zettiverse/WondrousTailsCopier/releases/latest/download/latest.zip",
         "IconUrl": "https://raw.githubusercontent.com/zettiverse/WondrousTailsCopier/main/icon.png",
-        "LastUpdate": 1732152646
+        "LastUpdate": 1732152647
     }
 ]
