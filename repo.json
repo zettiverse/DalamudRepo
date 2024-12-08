@@ -3,7 +3,7 @@
         "Author": "Zetty",
         "Name": "Wondrous Tails Copier",
         "InternalName": "WondrousTailsCopier",
-        "AssemblyVersion": "0.0.0.10",
+        "AssemblyVersion": "0.0.0.11",
         "Description": "Copy your Wondrous Tails objectives to the clipboard!",
         "ApplicableVersion": "any",
         "Tags": [
