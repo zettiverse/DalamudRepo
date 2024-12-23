@@ -1,0 +1,25 @@
+name: Update repo json
+on:
+  repository_dispatch:
+    types: [plugin-updated]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.client_payload.ref }}
+      - run: echo ${{ github.event.client_payload.sha }}
+
+      - name: run
+        with:
+          token: ${{ secrets.PAT }}
+      - run: |
+          python updateRepo.py ${{ github.event.client_payload.repo_name }} ${{ github.event.client_payload.version }}
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "generated for ${{ github.event.client_payload.repo_name }} v${{ github.event.client_payload.version }}"
+          git push
+          
