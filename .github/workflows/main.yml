@@ -2,6 +2,7 @@ name: Update repo json
 on:
   repository_dispatch:
     types: [plugin-updated]
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
